@@ -8,7 +8,7 @@ setup(
   author = 'Nareshkumar Jayavelu',                   # Type in your name
   author_email = 'nareshkumarj90@gmail.com',      # Type in your E-Mail
   url = 'https://https://github.com/naresh-datanut/pyspark-easy',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/naresh-datanut/pyspark-easy/archive/0.7.tar.gz',    # I explain this later on
   keywords = ['pyspark', 'dataframe', 'summary','explore','EDA'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
           'pyspark',
