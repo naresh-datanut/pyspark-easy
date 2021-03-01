@@ -1,4 +1,4 @@
-from pyspark-easy.utils import *
+from pyspark_easy.utils import *
 from pyspark.sql import functions as F
 from texttable import Texttable
 from pyspark.sql import DataFrame
