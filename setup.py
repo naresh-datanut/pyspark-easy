@@ -1,7 +1,7 @@
 from distutils.core import setup
 setup(
-  name = 'pyspark-easy',         # How you named your package folder (MyLib)
-  packages = ['pyspark-easy'],   # Chose the same as "name"
+  name = 'pyspark_easy',         # How you named your package folder (MyLib)
+  packages = ['pyspark_easy'],   # Chose the same as "name"
   version = '0.9',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'Makes pyspark dataframe exploration easy',   # Give a short description about your library
