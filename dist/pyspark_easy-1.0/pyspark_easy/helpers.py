@@ -161,3 +161,8 @@ def dates_generator(date, column, backward, forward):
             main_list.append(sub_lis)
 
     return main_list
+
+
+s = spark.sql("select * from sl1_ccra. caoutput_h limit 5")
+
+lag_lead_dates('2021-03-01', 'hi', 10, 5)

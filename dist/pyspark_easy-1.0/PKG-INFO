@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: pyspark_easy
+Version: 1.0
+Summary: Makes pyspark dataframe exploration easy
+Home-page: https://github.com/naresh-datanut/pyspark-easy
+Author: Nareshkumar Jayavelu
+Author-email: nareshkumarj90@gmail.com
+License: MIT
+Download-URL: https://github.com/naresh-datanut/pyspark-easy/archive/1.0.tar.gz
+Description: UNKNOWN
+Keywords: pyspark,dataframe,summary,explore,EDA
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

@@ -92,7 +92,7 @@ class pyspark_easy(object):
      print(t.draw())
 
   # summary stats for numerical columns
-    if summary_stats=='Y':
+    if summary_stats='Y'
       numeric_cols=Extract(numeric_columns)[1:]
       if len(numeric_cols)>0:
         print("\n")
