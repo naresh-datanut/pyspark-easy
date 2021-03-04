@@ -16,8 +16,8 @@ class pyspark_easy(object):
     self.no_of_columns=len(df.columns)
     self.col_types=df.dtypes
       
-      
-  def summary(self):
+  # pyspark summary - columns by types, observations, duplicate rows, no.of columns,summary stats and missing values stats
+  def summary(self,summary_stats='N'):
     
   # count no.of rows, variables and columns
   
@@ -92,15 +92,15 @@ class pyspark_easy(object):
      print(t.draw())
 
   # summary stats for numerical columns
-  
-    numeric_cols=Extract(numeric_columns)[1:]
-    if len(numeric_cols)>0:
-      print("\n")
-      print("Summary statistics for numerical columns are :")
-      print("\n")
-      for i in range(0,len(numeric_cols),5):
-        dff=self.df.select([F.col(c) for c in numeric_cols[i:i+5]])
-        dff.summary().show()
+    if summary_stats='Y'
+      numeric_cols=Extract(numeric_columns)[1:]
+      if len(numeric_cols)>0:
+        print("\n")
+        print("Summary statistics for numerical columns are :")
+        print("\n")
+        for i in range(0,len(numeric_cols),5):
+          dff=self.df.select([F.col(c) for c in numeric_cols[i:i+5]])
+          dff.summary().show()
  
  # missing values
   
