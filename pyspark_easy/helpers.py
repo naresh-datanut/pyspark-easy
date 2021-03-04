@@ -112,7 +112,7 @@ def column_search(spark_session, col, schema='all'):
 # months forward and back to create features based on the current date
 
 
-def dates_generator(date, column, backward, forward):
+def dates_generator(date, column, backward, forward=0):
 
     main_list = []
 
@@ -137,7 +137,7 @@ def dates_generator(date, column, backward, forward):
 
             sub_list.append(column + str('_b') + str(i + 1))
 
-            main_list.append(sub_lis)
+            main_list.append(sub_list)
 
     if isinstance(forward, int):
 
@@ -158,6 +158,6 @@ def dates_generator(date, column, backward, forward):
 
             sub_list.append(column + str('_f') + str(i + 1))
 
-            main_list.append(sub_lis)
+            main_list.append(sub_list)
 
     return main_list
