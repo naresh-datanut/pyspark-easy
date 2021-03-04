@@ -14,7 +14,7 @@ setup(
           'pyspark',
           'texttable',
           'DateTime',
-          'python-dateutil'
+          'python-dateutil',
           'warnings',
           'itertools'
       ],
