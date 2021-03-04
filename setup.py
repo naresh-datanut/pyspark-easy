@@ -15,7 +15,6 @@ setup(
           'texttable',
           'DateTime',
           'python-dateutil',
-          'warnings',
           'itertools'
       ],
   classifiers=[
