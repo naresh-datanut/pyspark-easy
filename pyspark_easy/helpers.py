@@ -89,20 +89,16 @@ def column_search(spark_session, col, schema='all'):
 
                             main_list.append(sub_list)
 
-    print("\n")
-
     if len(no_permission) > 0:
+        print("\n")
         print("The schemas you may not have permission on are {}".format({(', '.join(sl for sl in no_permission))}))
 
-    print("\n")
-
     if len(kudu_table) > 0:
+        print("\n")
         print("The kudu tables cannot be searched are {}".format({(', '.join(sl for sl in kudu_table))}))
 
-    print("\n")
-
     if len(main_list) > 0:
-
+        print("\n")
         for i in main_list:
             print("The columns found in the schema '{}' under the table '{}' are {}".format(i[0], i[1], {
                 (', '.join(sl for sl in i[2]))}))
