@@ -1,4 +1,3 @@
-
 import itertools
 
 import warnings
@@ -8,6 +7,7 @@ from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 
 warnings.filterwarnings("ignore")
+
 
 # search column on the schemas you are looking for or across the database
 def column_search(spark_session, col, schema='all'):
@@ -108,12 +108,10 @@ def column_search(spark_session, col, schema='all'):
                 (', '.join(sl for sl in i[2]))}))
 
 
-
 # months forward and back to create features based on the current date
 
 
 def dates_generator(date, column, backward, forward=0):
-
     main_list = []
 
     today = datetime.strptime(date, '%Y-%m-%d').date()
