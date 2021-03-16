@@ -1,4 +1,4 @@
-from utils import *
+from pyspark_easy.utils import *
 
 from sklearn.metrics import confusion_matrix
 
