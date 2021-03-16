@@ -3,13 +3,13 @@ from distutils.core import setup
 setup(
     name='pyspark_easy',  # How you named your package folder (MyLib)
     packages=['pyspark_easy'],  # Chose the same as "name"
-    version='1.6',  # Start with a small number and increase it with every change you make
+    version='1.7',  # Start with a small number and increase it with every change you make
     license='MIT',  # Chose a license from here: https://help.github.com/articles/licensing-a-repository
     description='Makes pyspark dataframe exploration easy',  # Give a short description about your library
     author='Nareshkumar Jayavelu',  # Type in your name
     author_email='nareshkumarj90@gmail.com',  # Type in your E-Mail
     url='https://github.com/naresh-datanut/pyspark-easy',  # Provide either the link to your github or to your website
-    download_url='https://github.com/naresh-datanut/pyspark-easy/archive/1.5.tar.gz',  # I explain this later on
+    download_url='https://github.com/naresh-datanut/pyspark-easy/archive/1.7.tar.gz',  # I explain this later on
     keywords=['pyspark', 'dataframe', 'evaluation', 'model', 'classification', 'multiclass classification',
               'binary classification', 'results', 'summary', 'explore', 'EDA'],
     # Keywords that define your package best
@@ -22,7 +22,7 @@ setup(
                       'seaborn',
                       'matplotlib',
                       'pandas',
-                      'scikitplot'],
+                      'scikit-plot'],
     classifiers=[
         'Development Status :: 3 - Alpha',
         # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
