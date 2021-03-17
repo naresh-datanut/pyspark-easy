@@ -163,4 +163,58 @@ dates_generator('2020-03-01','customer_average_balance',12,0)
                     ).otherwise(0),
                 )
 ```
-- pyspark_model_eval(model,predicted_df) - This class loads the model and the dataframe contain prediction results.
+- pyspark_model_eval(model,predicted_df) - This class loads the model and the dataframe containing prediction results. Ir evaluates the model and provides the quick results for binary and multi-class classification models.
+
+#### example:
+```
+from pyspark_easy import pyspark_model_eval
+res=pyspark_model_eval(model,predicted_df)
+res.results()
+```
+
+The function .results() yields the results in a few seconds.
+
+#### example of binary classification model:
+```
+The Train vs Test evaluation Metrics are :
++--------------------+--------+--------+
+|      Metrics       | Train  |  Test  |
++====================+========+========+
+| AreaUnderROC       | 88.430 | 79.980 |
++--------------------+--------+--------+
+| Accuracy           | 80.070 | 80.110 |
++--------------------+--------+--------+
+| Weighted Precision | 80.110 | 80.630 |
++--------------------+--------+--------+
+| Weighted Recall    | 80.070 | 80.110 |
++--------------------+--------+--------+
+| Weighted F1 Score  | 80.010 | 79.990 |
++--------------------+--------+--------+
+Note: The Weighted metrics - calculated by label then it is averaged
+
+All the below graphs plotted in a way it is easier to understand :-
+Confusion matrix
+Training ROC curve
+Training PR curve
+Test ROC curve
+Test PR Curve
+Test ROC Curve by label
+Test PR Curve by label
+Lift chart
+Cumulative chart
+
+The binary classification metrics for test data are:
++-----------+-----------+
+|  Metrics  | Test Data |
++===========+===========+
+| Precision | 84.560    |
++-----------+-----------+
+| Recall    | 72.790    |
++-----------+-----------+
+| F1 Score  | 78.240    |
++-----------+-----------+
+
+
+The Classification report in a tabular format.
+```
+
