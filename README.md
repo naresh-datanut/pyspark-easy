@@ -163,3 +163,4 @@ dates_generator('2020-03-01','customer_average_balance',12,0)
                     ).otherwise(0),
                 )
 ```
+- pyspark_model_eval(model,predicted_df) - This class loads the model and the dataframe contain prediction results.
