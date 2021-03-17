@@ -1,0 +1,10 @@
+pyspark
+ texttable
+DateTime
+python-dateutil
+ numpy
+ scikit-learn>=0.20.0
+ seaborn
+  matplotlib
+  pandas
+  scikit-plot
