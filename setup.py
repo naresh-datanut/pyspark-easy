@@ -11,7 +11,7 @@ setup(
     url='https://github.com/naresh-datanut/pyspark-easy',  # Provide either the link to your github or to your website
     download_url='https://github.com/naresh-datanut/pyspark-easy/archive/1.5.tar.gz',  # I explain this later on
     keywords=['pyspark', 'dataframe', 'evaluation', 'model', 'classification', 'multiclass classification',
-              'binary classification', 'results', 'summary', 'explore', 'EDA'],
+              'binary classification', 'results', 'search','pyspark utility','util','pyspark date','quick', 'summary', 'explore', 'EDA'],
     # Keywords that define your package best
     install_requires=['pyspark',
                       'texttable',
